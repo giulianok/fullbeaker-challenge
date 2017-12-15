@@ -1,5 +1,11 @@
 @import "./_reset.scss";
 @import "./_colors.scss";
+@import "./_breakpoint.scss";
+
+$bp-small: min-width 576px;
+$bp-medium: min-width 768px;
+$bp-large: min-width 992px;
+$bp-extra: min-width 1200px;
 
 * {
   position: relative;
