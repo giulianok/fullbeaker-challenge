@@ -18,9 +18,15 @@ p {
   line-height: 1.8em;
 }
 
+.container {
+  max-width: 850px;
+  margin: auto;
+}
+
 @import "./Hello.scss";
 @import "./Header.scss";
 @import "./AboutUs.scss";
 @import "./BoxWithShadow.scss";
 @import "./Slider.scss";
 @import "./Footer.scss";
+@import "./Logo.scss";

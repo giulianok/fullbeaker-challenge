@@ -1,7 +1,44 @@
 .AboutUs {
+  padding: 40px;
+  padding-top: 180px;
+
   .floating-box {
     position: absolute;
     z-index: 1;
     top: -100px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.Services {
+  $size: 162px;
+  display: flex;
+  justify-content: space-between;
+
+  .item {
+    width: $size;
+    text-align: center;
+  }
+
+  .picture-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $size;
+    height: $size;
+    border-radius: 5px;
+    background: $white;
+
+    &.hightlight {
+      background: $blue;
+      color: $white;
+    }
+  }
+
+  .text {
+    padding-top: 30px;
+    font-size: 1.1em;
   }
 }

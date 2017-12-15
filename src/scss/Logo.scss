@@ -1,0 +1,14 @@
+.Logo {
+  display: flex;
+
+  .wrapper {
+    margin-left: 16px;
+  }
+
+  .name {
+    padding-bottom: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.25em;
+  }
+}
