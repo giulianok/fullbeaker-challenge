@@ -1,0 +1,26 @@
+@import "./_reset.scss";
+@import "./_colors.scss";
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: $black;
+  background: $gray-light;
+}
+
+p {
+  line-height: 1.8em;
+}
+
+@import "./Hello.scss";
+@import "./Header.scss";
+@import "./AboutUs.scss";
+@import "./BoxWithShadow.scss";
+@import "./Slider.scss";
+@import "./Footer.scss";

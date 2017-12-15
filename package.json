@@ -1,0 +1,30 @@
+{
+  "name": "fullbeaker-challenge",
+  "version": "1.0.0",
+  "description": "Full Beaker Challenge",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass src/scss/style.scss src/css/style.css",
+    "sass:watch": "npm run sass -- -w",
+    "server": "live-server ./src/ --port=3000",
+    "start": "concurrently  \" npm run sass:watch \" \" npm run server  \" ",
+    "build": "npm run sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giulianok/fullbeaker-challenge.git"
+  },
+  "author": "Giuliano Kranevitter <info@giulianok.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giulianok/fullbeaker-challenge/issues"
+  },
+  "homepage": "https://github.com/giulianok/fullbeaker-challenge#readme",
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "node-sass": "^4.7.2"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}

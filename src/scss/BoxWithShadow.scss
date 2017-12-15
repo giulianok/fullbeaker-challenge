@@ -1,0 +1,12 @@
+.BoxWithShadow {
+  background: $white;
+  box-shadow: 0 0 20px transparentize($black, 0.8);
+  border-radius: 10px;
+  padding: 50px 40px;
+  text-align: center;
+
+  .title {
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+}
