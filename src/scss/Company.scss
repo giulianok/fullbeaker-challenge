@@ -28,6 +28,18 @@
 
   @include breakpoint($bp-medium) {
     .nurse {
+      margin-left: 20px;
+    }
+  }
+
+  @include breakpoint($bp-large) {
+    .nurse {
+      margin-left: 70px;
+    }
+  }
+
+  @include breakpoint($bp-extra) {
+    .nurse {
       margin-left: 140px;
     }
   }

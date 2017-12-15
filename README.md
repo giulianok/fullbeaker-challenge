@@ -4,6 +4,8 @@ The project uses HTML, SCSS and some jQuery.
 
 To run the project: `npm i && npm start`
 
+Example: http://bostwickworks.com/fullbeakerchallenge/
+
 ## What you're going to find
 
 * I normally work with Components and I follow OOCSS ideas, meaning that I normally don't use selectors like by ID and element, I use classes, since it's more scalable and easy to maintain. Classes in camel case like Home, BoxWithShadow, Slider, SocialMedia, etc are basically like "Components".
