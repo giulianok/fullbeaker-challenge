@@ -9,14 +9,27 @@
     }
   }
 
-  @include breakpoint($bp-medium) {
-    .nurse {
-      margin-left: 140px;
+  .content {
+    padding: 25px 0 10px;
+  }
+
+  .nurse-picture {
+    display: block;
+    width: 100%;
+
+    @include breakpoint($bp-medium) {
+      min-width: 380px;
     }
   }
 
   .social-media-wrapper {
     margin: 30px 0 10px;
+  }
+
+  @include breakpoint($bp-medium) {
+    .nurse {
+      margin-left: 140px;
+    }
   }
 }
 

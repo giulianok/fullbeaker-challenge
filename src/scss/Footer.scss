@@ -1,6 +1,6 @@
 .Footer {
   background: $blue;
-
+  text-align: center;
   font-size: 0.9em;
 
   &,
@@ -18,7 +18,16 @@
 
   .wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 17px;
+    padding: 12px;
+
+    @include breakpoint($bp-medium) {
+      flex-direction: row;
+    }
+  }
+
+  .column {
+    padding: 5px 0;
   }
 }

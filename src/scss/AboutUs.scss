@@ -1,25 +1,32 @@
 .AboutUs {
-  padding: 50px;
-  padding-top: 230px;
+  padding: 15px;
 
   .floating-box {
-    position: absolute;
-    z-index: 1;
-    top: -100px;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: -115px;
+  }
+
+  .content {
+    margin: 55px auto 35px;
+    padding: 0;
   }
 }
 
 .Services {
   $size: 162px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+
+  @include breakpoint(min-width 460px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
   .item {
     width: $size;
     text-align: center;
+    margin: 15px;
   }
 
   .picture-wrapper {
@@ -38,8 +45,12 @@
   }
 
   .text {
-    padding-top: 30px;
+    padding: 10px 0;
     font-size: 1.1em;
+
+    @include breakpoint($bp-medium) {
+      padding-top: 30px;
+    }
   }
 
   // Animation
