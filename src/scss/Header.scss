@@ -6,6 +6,16 @@
   width: 100%;
   padding: 40px 0;
 
+  &,
+  &.active {
+    transition: all 300ms ease;
+  }
+
+  &.active {
+    background: transparentize($white, 0.1);
+    padding: 20px 0;
+  }
+
   .wrapper {
     display: flex;
     justify-content: space-between;
@@ -57,19 +67,16 @@
 
 .OverlayMenu {
   position: fixed;
-  display: none;
+  display: flex;
   width: 100%;
-  height: 100%;
+  height: 10%;
   justify-content: center;
   align-items: center;
   top: 0;
   left: 0;
   background: transparentize($black, 0.05);
   z-index: 99;
-
-  &.active {
-    display: flex;
-  }
+  overflow: hidden;
 
   .close {
     $size: 50px;

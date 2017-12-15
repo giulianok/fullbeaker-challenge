@@ -20,28 +20,31 @@
   <header class="Header">
     <div class="wrapper container-large">
       <div class="Logo">
-        <img src="./images/iso_white@2x.png" width="43" height="45" />
+        <div>
+          <img src="./images/iso_white@2x.png" width="43" height="45" class="hideOnActive" />
+          <img src="./images/iso_coral@2x.png" width="43" height="45" class="showOnActive hidden" />
+        </div>
         <div class="info">
           <div class="name">Company Name</div>
           <div>Tag Line Goes Here</div>
         </div>
       </div>
 
-      <button class="Menu">
+      <button class="Menu" toggle-menu="true" menu-class="OverlayMenu">
         <span class="lines">Menu</span>
       </button>
     </div>
     <nav class="OverlayMenu">
-      <button class="close">Close</button>
+      <button class="close" toggle-menu="true" menu-class="OverlayMenu">Close</button>
       <ul class="menu">
         <li>
           <a href="#about">About us</a>
         </li>
         <li>
-          <a href="#about">Join now</a>
+          <a href="#join-us">Join now</a>
         </li>
         <li>
-          <a href="#about" class="highlight">Contact</a>
+          <a href="#" class="highlight">Contact</a>
         </li>
       </ul>
     </nav>
@@ -54,7 +57,7 @@
   </section>
 
   <!-- About Us -->
-  <section class="AboutUs">
+  <section class="AboutUs" id="about">
     <div class="floating-box container">
       <header class="BoxWithShadow">
         <h1 class="title">About Us</h1>
@@ -152,7 +155,7 @@
   </section>
 
   <!-- Company -->
-  <section class="Company">
+  <section class="Company" id="join-us">
     <div class="wrapper container-large">
       <!-- Left -->
       <div>

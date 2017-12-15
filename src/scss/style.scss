@@ -38,6 +38,10 @@ p {
   max-width: 1000px;
 }
 
+.hidden {
+  display: none;
+}
+
 @import "./Hello.scss";
 @import "./Header.scss";
 @import "./AboutUs.scss";
