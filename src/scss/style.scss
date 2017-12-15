@@ -12,6 +12,7 @@ body {
   font-size: 16px;
   color: $black;
   background: $gray-light;
+  font-weight: 400;
 }
 
 p {
@@ -20,12 +21,17 @@ p {
 }
 
 .container,
+.container-small,
 .container-large {
   margin: auto;
 }
 
 .container {
   max-width: 850px;
+}
+
+.container-small {
+  max-width: 670px;
 }
 
 .container-large {

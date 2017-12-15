@@ -7,12 +7,16 @@
   <meta name="theme-color" content="#000000">
   <link rel="shortcut icon" href="/favicon.ico">
   <title>Full Beaker Challenge</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./lib/slick/slick.css" />
+  <script type="text/javascript" src="./lib/slick/slick.js"></script>
 </head>
 
 <body>
 
+  <!-- HEADER -->
   <header class="Header">
     <div class="wrapper container-large">
       <div class="Logo">
@@ -65,7 +69,7 @@
         <li class="item">
           <figure>
             <div class="picture-wrapper">
-              <img src="./images/hive@2x.png" width="93" height="81" />
+              <img class="picture" src="./images/hive@2x.png" width="93" height="81" />
             </div>
             <figcaption class="text">Lorem ipsum dolor sit amet</figcaption>
           </figure>
@@ -73,7 +77,7 @@
         <li class="item">
           <figure>
             <div class="picture-wrapper hightlight">
-              <img src="./images/tool@2x.png" width="93" height="77" />
+              <img class="picture" src="./images/tool@2x.png" width="93" height="77" />
             </div>
             <figcaption class="text">Lorem ipsum dolor sit amet</figcaption>
           </figure>
@@ -81,7 +85,7 @@
         <li class="item">
           <figure>
             <div class="picture-wrapper">
-              <img src="./images/atom@2x.png" width="83" height="93" />
+              <img class="picture" src="./images/atom@2x.png" width="83" height="93" />
             </div>
             <figcaption class="text">Lorem ipsum dolor sit amet</figcaption>
           </figure>
@@ -92,10 +96,59 @@
 
   <!-- Slider -->
   <section class="Slider">
-    <p>Slider</p>
-    <p>Slider</p>
-    <p>Slider</p>
-    <p>Slider</p>
+    <ul id="slider">
+      <li class="item">
+        <div class="person-wrapper">
+          <div class="Person">
+            <div class="avatar">
+              <img src="./images/avatar@2x.png" width="64" height="66" />
+            </div>
+            <h1 class="name">Alice G. Mullins</h1>
+            <h2 class="title">General Physician</h2>
+          </div>
+        </div>
+        <div class="container-small">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </li>
+      <li class="item">
+        <div class="person-wrapper">
+          <div class="Person">
+            <div class="avatar">
+              <img src="./images/avatar@2x.png" width="64" height="66" />
+            </div>
+            <h1 class="name">Juanito Perez</h1>
+            <h2 class="title">CEO</h2>
+          </div>
+        </div>
+        <div class="container-small">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </li>
+      <li class="item">
+        <div class="person-wrapper">
+          <div class="Person">
+            <div class="avatar">
+              <img src="./images/avatar@2x.png" width="64" height="66" />
+            </div>
+            <h1 class="name">Some Guy</h1>
+            <h2 class="title">CTO</h2>
+          </div>
+        </div>
+        <div class="container-small">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </li>
+    </ul>
   </section>
 
   <!-- Company -->
@@ -166,7 +219,7 @@
     </div>
   </footer>
 
-
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

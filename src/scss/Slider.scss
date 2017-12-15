@@ -1,3 +1,62 @@
 .Slider {
+  padding: 20px 0;
   background: $coral;
+  color: $white;
+  text-align: center;
+
+  .person-wrapper {
+    margin: 10px 0;
+  }
+
+  .slick-list {
+    padding: 10px 0 40px 0;
+  }
+
+  // Overwrite
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+
+    button {
+      $size: 18px;
+      width: $size;
+      height: $size;
+      background: $white;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      border: 0;
+      text-indent: -9999em;
+      border-radius: $size;
+      margin: 10px;
+    }
+
+    .slick-active button {
+      background: $gray-dark;
+      box-shadow: none;
+    }
+  }
+}
+
+.Person {
+  .avatar {
+    $size: 178px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $size;
+    height: $size;
+    background: $white;
+    border-radius: $size;
+    margin: 25px auto;
+  }
+
+  .name {
+    font-weight: 700;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+  }
+
+  .title {
+    font-weight: 300;
+    font-size: 1.2em;
+  }
 }

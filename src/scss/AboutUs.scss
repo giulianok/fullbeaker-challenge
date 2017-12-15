@@ -1,6 +1,6 @@
 .AboutUs {
-  padding: 40px;
-  padding-top: 180px;
+  padding: 50px;
+  padding-top: 230px;
 
   .floating-box {
     position: absolute;
@@ -40,5 +40,26 @@
   .text {
     padding-top: 30px;
     font-size: 1.1em;
+  }
+
+  // Animation
+
+  .item {
+    * {
+      transition: all 700ms ease;
+    }
+  }
+
+  .item:hover {
+    * {
+      transition: all 300ms ease;
+    }
+
+    .picture-wrapper {
+      transform: scale(1.05);
+    }
+    .picture {
+      transform: scale(1.4);
+    }
   }
 }
