@@ -7,4 +7,55 @@
   .nurse {
     margin-left: 140px;
   }
+
+  .social-media-wrapper {
+    margin: 30px 0 10px;
+  }
+}
+
+.SocialMedia {
+  display: flex;
+
+  > li {
+    $size: 38px;
+    $radius: 5px;
+    display: block;
+    width: $size;
+    height: $size;
+    border: solid 1px $gray-dark;
+    border-right: 0;
+    overflow: hidden;
+
+    &:last-child {
+      border-right: solid 1px $gray-dark;
+      border-radius: 0 $radius $radius 0;
+    }
+
+    &:first-child {
+      border-radius: $radius 0 0 $radius;
+    }
+
+    > a {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+
+      &,
+      &:hover {
+        img {
+          transition: transform 300ms ease;
+        }
+      }
+
+      &:hover {
+        background: $white;
+
+        img {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
 }
