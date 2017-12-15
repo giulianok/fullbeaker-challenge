@@ -3,4 +3,54 @@
   top: 0;
   left: 0;
   z-index: 9;
+  width: 100%;
+  padding: 40px 0;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.Menu {
+  $size: 41px;
+  $borderSize: 2px;
+  width: $size;
+  height: $size;
+  background: transparent;
+  border: solid $borderSize $gray-dark;
+  border-radius: $size;
+  cursor: pointer;
+
+  .lines {
+    $distance: 7px;
+    text-indent: -9999em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+    &,
+    &:before,
+    &:after {
+      display: block;
+      width: 20px;
+      height: $borderSize;
+      background: $gray-dark;
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+    }
+
+    &:before {
+      top: -$distance;
+    }
+
+    &:after {
+      top: $distance;
+    }
+  }
 }

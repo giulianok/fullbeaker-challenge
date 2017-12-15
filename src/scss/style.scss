@@ -18,9 +18,17 @@ p {
   line-height: 1.8em;
 }
 
+.container,
+.container-large {
+  margin: auto;
+}
+
 .container {
   max-width: 850px;
-  margin: auto;
+}
+
+.container-large {
+  max-width: 1000px;
 }
 
 @import "./Hello.scss";
@@ -30,3 +38,4 @@ p {
 @import "./Slider.scss";
 @import "./Footer.scss";
 @import "./Logo.scss";
+@import "./Company.scss";

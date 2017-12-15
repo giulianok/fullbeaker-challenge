@@ -8,5 +8,15 @@
   .title {
     font-size: 2em;
     text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .line {
+    border: 0;
+    border-top: solid 1px $gray-dark;
+    width: 80%;
+    max-width: 380px;
+    opacity: 0.2;
+    margin: 20px auto;
   }
 }
